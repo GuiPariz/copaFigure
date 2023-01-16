@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto';
+    background: linear-gradient(150deg, #0a516d,#2b2726);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    margin: 75px auto 20px;
+}
+.card{
+    width: 354px;
+    height: 508px;
+    background-image: url(../../assets/bg-explorer.svg);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    cursor: pointer;
+}
+
+.card img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: solid 4px #f7dd43;
+    margin: 115px auto 100px;
+    pointer-events: none;
+    user-select: none;
+}
+
+.card h1{
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 55px;
+    pointer-events: none;
+    user-select: none;
+}
+.card p{
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 55px;
+    pointer-events: none;
+    user-select: none;
+}
+
+.tapOnCard{
+    margin: 0 auto 10px;
+    font-size: 3em;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    color: aliceblue;
+    animation: zoom 2000ms infinite normal;
+}
+
+@keyframes zoom {
+    0%{
+        font-size: 3em;
+    }
+    
+    50%{
+        font-size: 3.2em;
+    }
+    100%{
+        font-size: 3em;
+    }
+}
